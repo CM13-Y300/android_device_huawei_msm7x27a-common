@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm7x27a
 
+# BoringSSL compact
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
     hwmac \
