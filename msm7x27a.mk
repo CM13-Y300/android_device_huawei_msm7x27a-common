@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm7x27a
 
+# BoringSSL compact
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
     hwmac \
@@ -210,6 +214,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
    dalvik.vm.dex2oat-filter=balanced \
    dalvik.vm.dex2oat-flags=--no-watch-dog \
    dalvik.vm.image-dex2oat-filter=speed
+   dalvik.vm.dex2oat-swap=false
 
 # ART properties
 ADDITIONAL_DEFAULT_PROPERTIES += \
